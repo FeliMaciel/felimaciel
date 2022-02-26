@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/* HTML and Body Styles */
+
+html{
+    background-color: hsla(132, 97%, 87%, 1); 
+}
+
+body {
+    background-color: lightcyan; 
+}
+
+/* Heading Styles */
+header{
+    background-color: lightpink;
+}
+h1,h2{color:cadetblue}
+h1, h2 {
+    letter-spacing: 0.1em;
+}
+
+/* Section Styles */
+section {background-color: lightcyan;
+    width:75%; 
+    font-size: 1.3em;}
+
+/* Navigation Styles */	
+nav{
+    background-color:lightpink;}
+nav {
+    font-size: 0.8em;}
+
+nav > ul {
+    line-height: 2em;
+    list-style-type: none;}
+
+/* Footer Styles */
+
+footer{
+    background-color: lightpink;
+    text-align: center;
+}
