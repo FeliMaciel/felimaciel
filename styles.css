@@ -1,42 +1,142 @@
 @charset "utf-8";
 
-/* HTML and Body Styles */
+/* Structural Styles */
 
-html{
-    background-color: hsla(132, 97%, 87%, 1); 
+article, aside, figcaption, figure, footer, header, main, nav, section {
+    display: block;
+}
+
+/* Body Styles */
+
+html {
+   background-color:  hsla(132, 97%, 87%, 1);
+}
+h1,h2,h3,h4{color:cadetblue}
+h1, h2 {
+    letter-spacing: 0.1em;    
 }
 
 body {
-    background-color: lightcyan; 
+   background-color: lightcyan;
 }
 
-/* Heading Styles */
-header{
-    background-color: lightpink;
-}
-h1,h2{color:cadetblue}
-h1, h2 {
-    letter-spacing: 0.1em;
+
+/* Horizontal Navigation Styles */
+
+nav.horizontalNavigation li {
+    display: block;
 }
 
-/* Section Styles */
-section {background-color: lightcyan;
-    width:75%; 
-    font-size: 1.3em;}
+nav.horizontalNavigation a {
+    display: block;
+   text-align: left;
+}
+/* Left Column Styles */
 
-/* Navigation Styles */	
-nav{
-    background-color:lightpink;}
-nav {
-    font-size: 0.8em;}
+section#leftColumn {
+    clear: left;
+    float: left;
+    width: 60%
+}
 
-nav > ul {
-    line-height: 2em;
-    list-style-type: none;}
+
+/* Right Column Styles */
+
+section#rightColumn {
+    float: left; 
+    width: 40%;
+}
+
+section#rightColumn img { 
+display: block;
+width: 100%;
+}
+
 
 /* Footer Styles */
 
-footer{
-    background-color: lightpink;
+footer {
+     background-color: lightpink;
     text-align: center;
+    clear: left;
 }
+
+footer::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+footer > nav.verticalNavigation {
+    float: left;
+    width: 22%;
+}
+
+footer > section#contactInfo {
+    float: left;
+    width: 100%;
+}
+
+body > footer {
+   font-size: 0.9em;
+   color: lightpink;
+}
+
+body > footer h1 {
+   color: lightseagreen;
+   font-size: 1.1em;
+   font-weight: normal;
+   letter-spacing: 0.2em;
+   margin: 1em 0 0.5em 1em;
+}
+/* Typographic Styles */
+
+addresss, article, aside, blockqoute, body, cite, div, dl, dt, em, figcaption, figure, footer, li, main, nav, ol, p, section, span, ul {
+    
+    background: transparent;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    line-height: 1;
+}
+
+
+/* Horizontal Navigation Styles */
+
+nav.horizontalNavigation a {
+   font-size: 1.2em;
+   line-height: 1.6em;
+   text-align: left;
+}  
+
+nav.horizontalNavigation a:link, 
+nav.horizontalNavigation a:visited {
+   color: lightcoral;
+}
+
+nav.horizontalNavigation a:hover, 
+nav.horizontalNavigation a:active {
+   background-color: lightcyan;
+
+}   
+
+
+/* Left Column Paragraph Styles */
+
+section#leftColumn p {
+   color: black;
+   font-size: 1.2em;
+   line-height: 1.2em;
+}
+
+
+
+/* Contact Info Styles */
+
+section#contactInfo p {
+   line-height: 1.8em;
+   margin: 2em;
+}   
